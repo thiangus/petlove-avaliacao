@@ -15,6 +15,15 @@ Para solução tenter pensar em como escalar o sistema, utilizei spring boot, po
 
 # Como executar
 
+``` sh 
+https://thiago-test-petlove.herokuapp.com/raca.xhtml
+```
+
+Para castramento gerei collection para facilitar só importar no Postman, entrar no postman e importar pelo link
+```
+link https://www.getpostman.com/collections/ab1df941b06133970e00
+```
+
 ## Questões - Colocar somente as querys
 
 Inclua os trechos com as queries que respondem as perguntas abaixo:
