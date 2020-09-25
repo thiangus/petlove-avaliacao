@@ -13,6 +13,12 @@ Para solução tenter pensar em como escalar o sistema, utilizei spring boot, po
   - Foquei no desacoplamento, não queria que o objeto da entidade ficasse no view, isso facilita criar microservicos
   - Separei os modulos de maneira que fique claro e de facil reutilização, tanto que tem um serviço que é utilizado pelo actin bean e outro rest
 
+
+# Hospedado Heroku
+ 
+ - Esta automatico o deploy se commitar reflete no pipeline integrado entre o heroku e o git
+ url no email
+
 # Como executar
 
 ``` sh 
@@ -21,7 +27,7 @@ https://thiago-test-petlove.herokuapp.com/raca.xhtml
 
 Para castramento gerei collection para facilitar só importar no Postman, entrar no postman e importar pelo link
 ```
-link https://www.getpostman.com/collections/ab1df941b06133970e00
+link no email
 ```
 
 ## Questões - Colocar somente as querys
