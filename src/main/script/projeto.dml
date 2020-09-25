@@ -1,0 +1,11 @@
+insert into raca (id, nome) values (nextval('raca_sequence'), 'Beagle');
+insert into especie (id, nome) values (nextval('especie_sequence'), 'Cachorro');
+insert into endereco (id, cep, logradouro, complemento, cidade, uf)  values (nextval('endereco_sequence'),'04111-000', 'av xpto', 'apto 113', 'Sao Paulo', 'SP');
+insert into usuario (id, nome, email, senha) values (nextval('usuario_sequence'), 'plxprado', 'prado@gmail.com', '787&(');
+insert into proprietario (id, nome, data_nascimento, usuario_id, endereco_id) values (nextval('proprietario_sequence'), 'Jose Joao da Silva', now(), currval('usuario_sequence'), currval('endereco_sequence'));
+insert into animal (id, nome, data_nascimento, raca_id, especie_id, proprietario_id) VALUES (nextval('animal_sequence'), 'Bryan', now(), currval('raca_sequence'), currval('especie_sequence'), currval('proprietario_sequence'));
+insert into servico (id, descricao, valor) VALUES (nextval('servico_sequence'), 'Banho e Tosa', 1.00);
+insert into servico (id, descricao, valor) VALUES (nextval('servico_sequence'), 'Vacina', 9.00);
+insert into agenda (id, descricao, horario, animal_id, proprietario_id, servico_id)
+values (nextval('agenda_sequence'), 'Agendado bryan', now(), currval('animal_sequence'), currval('proprietario_sequence'), currval('servico_sequence'));
+
