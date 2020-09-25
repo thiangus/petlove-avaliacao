@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://java.sun.com/jsf/core">
+
+<h:head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Raca Crud</title>
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css"/>
+
+</h:head>
+<h:body>
+    <div class="container">
+
+        Busque pelo nome da raca
+
+        <h:form id="racaForm">
+            <h:panelGroup layout="block" rendered="#{not empty racaForm.nome}">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        Nome da raca:
+                        <strong>
+                            <h:outputLabel value="#{racaForm.nome}" />
+                        </strong>
+                    </div>
+                </div>
+            </h:panelGroup>
+
+            <div class="form-group">
+                <h:inputText id="nome" styleClass="form-control" autocomplete="off" maxlength="255" value="#{racaForm.nome}" />
+            </div>
+
+            <h:commandButton type="submit" value="Buscar Raca" styleClass="btn btn-primary" action="#{racaAction.buscarPorNomeRaca(racaForm.nome)}" />
+
+        </h:form>
+
+    </div>
+
+</h:body>
+
+</html>
