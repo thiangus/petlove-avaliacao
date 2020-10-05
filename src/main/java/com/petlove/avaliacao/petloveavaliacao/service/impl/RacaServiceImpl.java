@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 @Service
 public class RacaServiceImpl implements RacaService {
 
-    Logger logger = Logger.getLogger("RacaController");
+    Logger logger = Logger.getLogger("RacaServiceImpl");
 
     @Autowired
     private RacaRepository racaRepository;
